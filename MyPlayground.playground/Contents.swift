@@ -2,39 +2,6 @@ import UIKit
 
 var greeting = "Hello, playground"
 
-public struct Loscore{
-    let name:String
-    init(name:String){
-        self.name = name
-    }
-    func identity(_ num:Int) -> Int{
-        return num
-    }
-    func add(_ numA:Int,_ numB:Int) -> Int{
-        return numA+numB
-    }
-    func head(_ arr:[Int]) -> Int{
-        return arr.first!
-    }
-    func tail(_ arr:[Int]) -> Int{
-        return arr.last!
-    }
-    func take(arr:[Int],sliceNum:Int=1) -> [Int]{
-        var arr1:[Int] = arr.reversed()
-        arr1 = arr1.suffix(sliceNum)
-        arr1 = arr1.reversed()
-        return arr1
-        //print([5,4,3,2,1].prefix(3))
-    }
-    func takeRight(arr:[Int],sliceNum:Int=1) -> [Int]{
-        return arr.suffix(sliceNum)
-    }
-    func uniq(_ arr:[Int]) -> Set<Int>{
-        let arr1:Set = Set(arr)
-        return arr1
-    }
-}
-
 let loscore = Loscore(name:"loscore")
 print("loscore name")
 test(loscore.name,"loscore")
