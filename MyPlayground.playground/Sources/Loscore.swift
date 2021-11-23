@@ -31,4 +31,27 @@ public struct Loscore{
         let arr1:Set = Set(arr)
         return arr1
     }
+    public func size(_ arr:[Int]) -> Int{
+        return arr.count
+    }
+    public func each(arr:[Int], iteratee:([Int])->([Int])){
+        
+    }
+    
+//    public func each(arr:[Int]) -> [Int]{
+//        var result:[Int]=[]
+//        if size(arr) == 0{
+//            return [0]
+//        }
+//        for i in 0..<size(arr){
+//            result.append(i);
+//        }
+//        return result
+//    }
+    
+    public func sample(title:String, callback:(String)->(String)){
+    print("処理1")
+    print("\(callback(title)):処理2")
+     
+    }
 }

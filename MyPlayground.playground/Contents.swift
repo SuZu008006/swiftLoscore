@@ -20,7 +20,14 @@ test(loscore.takeRight(arr:[5,4,3,2,1],sliceNum:2),[2,1])
 print("loscore uniq")
 test(loscore.uniq([5,4,4,4,4]),[5,4])
 test(loscore.uniq([3,1,3,4,1]),[3,1,4])
+print("loscore size")
+test(loscore.size([5,4,4,4,4]),5)
 
+print("loscore each")
 
-
+print("sample")
+loscore.sample(title: "テストaasaaa") { test in
+//Stringを返すことに従えば、あとはどのように加工してもOK
+return "\(test)です"
+}
 
