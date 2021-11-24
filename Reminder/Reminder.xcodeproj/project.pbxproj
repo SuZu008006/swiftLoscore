@@ -16,6 +16,7 @@
 		FE8B0C83274DC00700CE8671 /* ReminderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B0C82274DC00700CE8671 /* ReminderUITests.swift */; };
 		FE8B0C85274DC00700CE8671 /* ReminderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B0C84274DC00700CE8671 /* ReminderUITestsLaunchTests.swift */; };
 		FE8B0C92274DC75B00CE8671 /* RemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B0C91274DC75B00CE8671 /* RemindersTableViewController.swift */; };
+		FE8B0C94274DD83400CE8671 /* AddReminderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8B0C93274DD83400CE8671 /* AddReminderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		FE8B0C82274DC00700CE8671 /* ReminderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderUITests.swift; sourceTree = "<group>"; };
 		FE8B0C84274DC00700CE8671 /* ReminderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FE8B0C91274DC75B00CE8671 /* RemindersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersTableViewController.swift; sourceTree = "<group>"; };
+		FE8B0C93274DD83400CE8671 /* AddReminderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReminderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				FE8B0C6A274DC00700CE8671 /* Assets.xcassets */,
 				FE8B0C6C274DC00700CE8671 /* LaunchScreen.storyboard */,
 				FE8B0C6F274DC00700CE8671 /* Info.plist */,
+				FE8B0C93274DD83400CE8671 /* AddReminderViewController.swift */,
 			);
 			path = Reminder;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 				FE8B0C62274DC00600CE8671 /* AppDelegate.swift in Sources */,
 				FE8B0C92274DC75B00CE8671 /* RemindersTableViewController.swift in Sources */,
 				FE8B0C64274DC00600CE8671 /* SceneDelegate.swift in Sources */,
+				FE8B0C94274DD83400CE8671 /* AddReminderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
