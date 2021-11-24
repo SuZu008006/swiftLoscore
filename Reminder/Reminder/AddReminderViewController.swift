@@ -22,6 +22,9 @@ final class AddReminderViewController:UIViewController{
         debugPrint(#function)
         debugPrint(newReminderTextField.text)
         delegate?.addNewReminder(withText:newReminderTextField.text)
+        dismiss(animated: true){
+            debugPrint("Finished dismissing!")
+        }
     }
     
 }

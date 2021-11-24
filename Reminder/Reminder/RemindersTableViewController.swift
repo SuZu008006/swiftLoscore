@@ -12,6 +12,11 @@ final class RemindersTableViewController: UITableViewController {
     private var reminders: [String] = [
         "宿題", "散歩"
     ]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.allowsSelection = false
+    }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if
@@ -32,11 +37,21 @@ final class RemindersTableViewController: UITableViewController {
  
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        debugPrint(#function)
+        reminders.remove(at:indexPath.row)
+        tableView.deleteRows(at:[indexPath], with: .automatic)
+    }
 }
 
 extension RemindersTableViewController:
     AddReminderViewControllerDelegate{
-    func addNewReminder(withText text: String?) {
-        debugPrint(#function+"withText:\(text)")
+    func addNewReminder(withText maybetext: String?) {
+        debugPrint(#function+"withText:\(maybetext)")
+        if let text = maybetext{
+            reminders.append(text)
+            tableView.reloadData()
+        }
     }
 }
