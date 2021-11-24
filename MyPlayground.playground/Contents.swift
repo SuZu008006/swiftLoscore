@@ -31,3 +31,8 @@ loscore.sample(title: "テストaasaaa") { test in
 return "\(test)です"
 }
 
+
+print("polymophism")
+print("polymophism Ellipse")
+let testObj = Ellipse("ellipse", 100, 200);
+test(testObj,{tag: "ellipse", rx: 100, ry: 200})
